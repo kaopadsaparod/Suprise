@@ -155,7 +155,7 @@ body {
 .kitty-heart {
   position: absolute;
   width: 150px;
-  top: 150px;
+  top: 100px;
   pointer-events: none;
 }
 /* -------------------------- */
