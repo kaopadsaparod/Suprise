@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8" />
   <title>For You ♡</title>
@@ -15,7 +16,7 @@
         <div class="envelope-back"></div>
         <div class="envelope-letter">สำหรับเธอ 💌</div>
       </div>
-      <div class="open-hint">คลิกเพื่อเปิดจดหมาย</div>
+      <div class="open-hint">เปิดสิมีอะไรรออยู่นะ</div>
     </div>
   </div>
 
@@ -24,16 +25,18 @@
   <img src="arai.gif" class="arai" alt="cute-cat">
   <img src="cat.gif" class="catgive" alt="cat">
   <img src="kitty-kitty-heart.gif" class="kitty-heart" alt="kitty-heart">
+  <img src="heart-love.gif" class="heart" alt="heart">
+  <img src="ginomelet.gif" class="ginomelet" alt="ginomelet">
 
   <div class="wrapper">
     <div class="card">
       <div class="title">For you, my favourite person♡</div>
 
       <div class="omelet_icon">🐥</div>
-      
+
       <div class="subtitle">
         ทำเว็บหน้านี้ขึ้นมาเพราะอยากบอกความรู้สึก<br>
-        แบบที่ปกติไม่ค่อยได้พูดออกไป :)
+        แบบที่ปกติไม่ค่อยได้พูดออกไปมัน :)
       </div>
 
       <div class="counter" id="counter"></div>
@@ -41,37 +44,37 @@
       <div class="note">
         <div class="note-label">note #1</div>
         <div class="note-text">
-วันที่เค้าเจอเธอครั้งแรก  
-ยังจำได้อยู่เลยว่าฉันคิดในใจว่า  
-“ทำไมคนคนนี้ถึงน่ารักขนาดนี้นะ💖”
+          วันที่เค้าเจอเธอครั้งแรก
+          ยังจำได้อยู่เลยว่าฉันคิดในใจว่า
+          “เธอคงเป็นคนที่น่ารักที่สุดในโรงเรียนนี้แล้ว💖”
         </div>
       </div>
 
       <div class="note">
         <div class="note-label">note #2</div>
         <div class="note-text">
-เค้าไม่ได้ชอบเธอแค่ตอนเธอดูเก่งดูตั้งใจ  
-แต่ชอบตอนที่เธอเป็นตัวเอง  
-ทั้งตอนงอแง เหนื่อย หรือเงียบ
-สำหรับเค้าทุกอย่างที่เป็นออมเล็ตมันน่ารักไปหมดเลย
+          เค้าไม่ได้ชอบเธอแค่ตอนเธอดูเก่งดูตั้งใจ
+          แต่ชอบตอนที่เธอเป็นตัวเอง
+          ทั้งตอนงอแง เหนื่อย หรือเงียบ
+          สำหรับเค้าทุกอย่างที่เป็นออมเล็ตมันน่ารักไปหมดเลย
         </div>
       </div>
 
       <div class="note">
         <div class="note-label">note #3</div>
         <div class="note-text">
-เวลาคิดถึงคำว่า “สบายใจ”  
-ฉันนึกถึงเธอก่อนเสมอ  
-เธอคือบ้านที่ฉันเลือกเองทุกวันนะ
+          เวลาคิดถึงคำว่า “สบายใจ”
+          ฉันนึกถึงเธอก่อนเสมอ
+          เธอคือบ้านที่ฉันเลือกเองทุกวันนะ
         </div>
       </div>
 
       <div class="note">
         <div class="note-label">note #4</div>
         <div class="note-text">
-ขอบคุณที่อยู่ข้างกันในวันธรรมดาๆ  
-และหวังว่าในวันดี วันแย่ หรือวันที่งงๆ  
-เราจะยังมองเจอกันในที่เดิมเหมือนเดิม :)
+          ขอบคุณที่อยู่ข้างกันในวันธรรมดาๆ
+          และหวังว่าในวันดี วันแย่ หรือวันที่งงๆ
+          เราจะยังมองเจอกันในที่เดิมเหมือนเดิม :)
         </div>
       </div>
 
@@ -96,7 +99,7 @@
 
     envBox.addEventListener("click", () => {
       bgm.volume = 0.5;
-      bgm.play().catch(() => {});
+      bgm.play().catch(() => { });
       envBox.classList.add("open");
       setTimeout(() => {
         envScreen.classList.add("fadeOut");
@@ -106,29 +109,30 @@
       }, 1300);
     });
 
-btn.addEventListener("click", () => {
+    btn.addEventListener("click", () => {
 
-  if (i >= 0) {
-    notes[i].style.display = "none";
-    notes[i].classList.remove("note-show");
-  }
+      if (i >= 0) {
+        notes[i].style.display = "none";
+        notes[i].classList.remove("note-show");
+      }
 
-  i++;
+      i++;
 
-  if (i < notes.length) {
-    notes[i].style.display = "block";
+      if (i < notes.length) {
+        notes[i].style.display = "block";
 
-    void notes[i].offsetWidth; 
-    notes[i].classList.add("note-show");
+        void notes[i].offsetWidth;
+        notes[i].classList.add("note-show");
 
-    btn.textContent = i === notes.length - 1 ? "อ่านจบแล้ว :)" : "ถัดไป";
-    counter.textContent = `ข้อความที่ ${i + 1} / ${notes.length}`;
-  } else {
-    btn.disabled = true;
-    btn.textContent = "หมดแล้ว แต่เรายังรักเธออยู่นะ ♡";
-  } 
-});
+        btn.textContent = i === notes.length - 1 ? "อ่านจบแล้ว :)" : "ถัดไป";
+        counter.textContent = `ข้อความที่ ${i + 1} / ${notes.length}`;
+      } else {
+        btn.disabled = true;
+        btn.textContent = "หมดแล้ว แต่เรายังรักเธออยู่นะ ♡";
+      }
+    });
 
   </script>
 </body>
+
 </html>
