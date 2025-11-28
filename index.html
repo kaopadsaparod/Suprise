@@ -3,135 +3,270 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>For You ♡</title>
+  <title>For Omelet ♡</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- เพลง -->
+  <audio id="bgm" src="love.mp3" loop></audio>
+
+  <!-- หน้าซองจดหมาย -->
   <div class="envelope-screen" id="envelopeScreen">
     <div class="envelope-container" id="openEnvelope">
       <div class="envelope">
-        <div class="envelope-front"></div>
-        <div class="envelope-back"></div>
-        <div class="envelope-letter">สำหรับเธอ 💌</div>
+        <div class="letter">ถึง ออมเล็ต 💌</div>
       </div>
-      <div class="open-hint">เปิดสิมีอะไรรออยู่นะ</div>
     </div>
+    <div class="click-hint">แตะเพื่อเปิดอ่าน...</div>
   </div>
 
-  <audio id="bgm" src="love.mp3" autoplay loop></audio>
+  <!-- ของตกแต่ง -->
+  <img src="arai.gif" class="decoration-gif arai" alt="cute-cat">
+  <img src="cat.gif" class="decoration-gif catgive" alt="cat">
+  <img src="kitty-kitty-heart.gif" class="decoration-gif kitty-heart" alt="kitty-heart">
 
-  <img src="arai.gif" class="arai" alt="cute-cat">
-  <img src="cat.gif" class="catgive" alt="cat">
-  <img src="kitty-kitty-heart.gif" class="kitty-heart" alt="kitty-heart">
-  <img src="heart-love.gif" class="heart" alt="heart">
-  <img src="ginomelet.gif" class="ginomelet" alt="ginomelet">
-
+  <!-- เนื้อหาหลัก -->
   <div class="wrapper">
     <div class="card">
-      <div class="title">For you, my favourite person♡</div>
-
       <div class="omelet_icon">🐥</div>
-
+      <div class="title">For you, my favourite person</div>
       <div class="subtitle">
-        ทำเว็บหน้านี้ขึ้นมาเพราะอยากบอกความรู้สึก<br>
-        แบบที่ปกติไม่ค่อยได้พูดออกไปมัน :)
+        เว็บนี้เค้าตั้งใจทำให้เธอเลยนะ :)
       </div>
 
-      <div class="counter" id="counter"></div>
+      <!-- Gallery -->
+      <div class="gallery">
+        <!-- ใส่รูปที่นี่ -->
+        <div class="gallery-item"><img src="รูปomelet/1761838453401.jpg" loading="lazy"></div>
+        <div class="gallery-item"><img src="รูปomelet/1761838453617.jpg" loading="lazy"></div>
+        <div class="gallery-item"><img src="รูปomelet/1761838454541.jpg" loading="lazy"></div>
+        <div class="gallery-item"><img src="รูปomelet/1761838454968.jpg" loading="lazy"></div>
+        <div class="gallery-item"><img src="รูปomelet/1761838461976.jpg" loading="lazy"></div>
+        <div class="gallery-item"><img src="รูปomelet/1761838462031.jpg" loading="lazy"></div>
+      </div>
 
-      <div class="note">
-        <div class="note-label">note #1</div>
-        <div class="note-text">
-          วันที่เค้าเจอเธอครั้งแรก
-          ยังจำได้อยู่เลยว่าฉันคิดในใจว่า
-          “เธอคงเป็นคนที่น่ารักที่สุดในโรงเรียนนี้แล้ว💖”
+      <div class="counter" id="counter">พร้อมมั้ย?</div>
+
+      <!-- Notes Container -->
+      <div class="note-container">
+        <div class="note" id="introNote" style="display: block;">
+          <div class="note-label">START</div>
+          <div class="note-text">
+            อยากบอกความรู้สึกที่ปกติไม่ค่อยได้พูด
+            ลองกดอ่านไปเรื่อยๆ นะครับคนเก่ง
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="note-label">NOTE #1</div>
+          <div class="note-text">
+            จำวันแรกที่เจอได้มั้ย?
+            ตอนนั้นเค้าคิดในใจเลยว่า
+            "ทำไมคนนี้น่ารักจังวะ" 💖
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="note-label">NOTE #2</div>
+          <div class="note-text">
+            เค้าชอบเวลาออมเล็ตเป็นตัวเองที่สุด
+            ไม่ว่าจะตอนตั้งใจเรียน ตอนบ่นเหนื่อย
+            หรือตอนงอแงก็น่ารักไปหมดเลยรู้ป่าว
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="note-label">NOTE #3</div>
+          <div class="note-text">
+            เวลาเค้าเหนื่อย หรือเจอเรื่องแย่ๆ
+            แค่นึกถึงหน้าเธอ หรือได้คุยกัน
+            มันก็เหมือนได้ชาร์จแบตจนเต็มเลย 🔋
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="note-label">NOTE #4</div>
+          <div class="note-text">
+            ขอบคุณที่อยู่ข้างๆ กันนะ
+            ไม่ว่าวันข้างหน้าจะเป็นยังไง
+            เค้าก็จะอยู่ข้างๆ ออมเล็ตแบบนี้แหละ
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="note-label">LAST ONE</div>
+          <div class="note-text">
+            รักเธอนะครับ ออมเล็ต
+            และนี่คือดอกไม้สำหรับคนเก่งของเค้า...
+            🌻🌷🌹
+          </div>
         </div>
       </div>
 
-      <div class="note">
-        <div class="note-label">note #2</div>
-        <div class="note-text">
-          เค้าไม่ได้ชอบเธอแค่ตอนเธอดูเก่งดูตั้งใจ
-          แต่ชอบตอนที่เธอเป็นตัวเอง
-          ทั้งตอนงอแง เหนื่อย หรือเงียบ
-          สำหรับเค้าทุกอย่างที่เป็นออมเล็ตมันน่ารักไปหมดเลย
-        </div>
-      </div>
-
-      <div class="note">
-        <div class="note-label">note #3</div>
-        <div class="note-text">
-          เวลาคิดถึงคำว่า “สบายใจ”
-          ฉันนึกถึงเธอก่อนเสมอ
-          เธอคือบ้านที่ฉันเลือกเองทุกวันนะ
-        </div>
-      </div>
-
-      <div class="note">
-        <div class="note-label">note #4</div>
-        <div class="note-text">
-          ขอบคุณที่อยู่ข้างกันในวันธรรมดาๆ
-          และหวังว่าในวันดี วันแย่ หรือวันที่งงๆ
-          เราจะยังมองเจอกันในที่เดิมเหมือนเดิม :)
-        </div>
-      </div>
-
-      <button class="btn" id="nextBtn">กดเพื่อดูข้อความแรก</button>
+      <button class="btn" id="nextBtn">ไปต่อเลย!</button>
 
       <div class="footer-text">
-        *หน้าเว็บนี้เขียนขึ้นมาเพื่อเธอคนเดียวเท่านั้น :)
+        *เว็บนี้เขียนขึ้นมาเพื่อออมเล็ตคนเดียวในโลก*
       </div>
     </div>
   </div>
+
+  <canvas id="flowerCanvas"></canvas>
 
   <script>
     const bgm = document.getElementById("bgm");
     const envScreen = document.getElementById("envelopeScreen");
     const envBox = document.getElementById("openEnvelope");
-
     const notes = document.querySelectorAll(".note");
     const btn = document.getElementById("nextBtn");
     const counter = document.getElementById("counter");
+    const canvas = document.getElementById("flowerCanvas");
+    const ctx = canvas.getContext("2d");
 
-    let i = -1;
+    let currentNote = 0;
+    let isFlowerTime = false;
 
+    // Envelope Interaction
     envBox.addEventListener("click", () => {
-      bgm.volume = 0.5;
-      bgm.play().catch(() => { });
+      bgm.volume = 0.4;
+      bgm.play().catch(() => console.log("Audio play failed"));
       envBox.classList.add("open");
       setTimeout(() => {
-        envScreen.classList.add("fadeOut");
-      }, 650);
-      setTimeout(() => {
-        envScreen.style.display = "none";
-      }, 1300);
+        envScreen.style.opacity = "0";
+        setTimeout(() => {
+          envScreen.style.display = "none";
+        }, 800);
+      }, 1000);
     });
 
+    // Note Navigation
     btn.addEventListener("click", () => {
-
-      if (i >= 0) {
-        notes[i].style.display = "none";
-        notes[i].classList.remove("note-show");
+      if (isFlowerTime) {
+        startFlowerShow();
+        btn.style.display = "none";
+        counter.textContent = "Enjoy the flowers! 🌸";
+        return;
       }
 
-      i++;
+      // Hide current
+      notes[currentNote].style.display = "none";
+      notes[currentNote].classList.remove("note-show");
 
-      if (i < notes.length) {
-        notes[i].style.display = "block";
+      currentNote++;
 
-        void notes[i].offsetWidth;
-        notes[i].classList.add("note-show");
+      if (currentNote < notes.length) {
+        // Show next
+        notes[currentNote].style.display = "block";
+        void notes[currentNote].offsetWidth; // Trigger reflow
+        notes[currentNote].classList.add("note-show");
 
-        btn.textContent = i === notes.length - 1 ? "อ่านจบแล้ว :)" : "ถัดไป";
-        counter.textContent = `ข้อความที่ ${i + 1} / ${notes.length}`;
-      } else {
-        btn.disabled = true;
-        btn.textContent = "หมดแล้ว แต่เรายังรักเธออยู่นะ ♡";
+        counter.textContent = `Note ${currentNote} / ${notes.length - 1}`;
+
+        if (currentNote === notes.length - 1) {
+          btn.textContent = "กดเพื่อรับเซอร์ไพรส์ ✨";
+          isFlowerTime = true;
+        } else {
+          btn.textContent = "อ่านต่อ...";
+        }
       }
     });
 
+    // Flower Logic
+    function startFlowerShow() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      let flowers = [];
+      const colors = ['#ff9fb8', '#ffb7b2', '#ffdac1', '#e2f0cb', '#b5ead7', '#c7ceea'];
+
+      class Flower {
+        constructor(x, y, type) {
+          this.x = x;
+          this.y = y;
+          this.type = type;
+          this.size = 0;
+          this.maxSize = Math.random() * 20 + 20;
+          this.growthSpeed = Math.random() * 0.5 + 0.2;
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+          this.angle = Math.random() * Math.PI * 2;
+        }
+
+        grow() {
+          if (this.size < this.maxSize) {
+            this.size += this.growthSpeed;
+          }
+        }
+
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.fillStyle = this.color;
+
+          if (this.type === 'simple') {
+            for (let i = 0; i < 5; i++) {
+              ctx.rotate(Math.PI * 2 / 5);
+              ctx.beginPath();
+              ctx.ellipse(0, this.size, this.size / 2, this.size, 0, 0, Math.PI * 2);
+              ctx.fill();
+            }
+            ctx.fillStyle = '#fff7cc';
+            ctx.beginPath();
+            ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);
+            ctx.fill();
+          } else if (this.type === 'rose') {
+            // Simple Rose-like spiral
+            ctx.strokeStyle = this.color;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            for (let i = 0; i < this.size * 3; i++) {
+              let angle = 0.5 * i;
+              let x = (1 + angle) * Math.cos(angle);
+              let y = (1 + angle) * Math.sin(angle);
+              ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+          }
+
+          ctx.restore();
+        }
+      }
+
+      function addFlower() {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height; // Start from bottom? No, random is better for "field" effect or filling screen
+        // Let's make them grow from bottom up mostly
+        const yBottom = canvas.height - Math.random() * (canvas.height / 2);
+
+        flowers.push(new Flower(x, yBottom, Math.random() > 0.5 ? 'simple' : 'rose'));
+      }
+
+      // Animation Loop
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        if (Math.random() < 0.1) addFlower();
+
+        flowers.forEach(flower => {
+          flower.grow();
+          flower.draw();
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+
+      // Burst of flowers at start
+      for (let i = 0; i < 10; i++) addFlower();
+    }
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
   </script>
 </body>
 
